@@ -29,6 +29,8 @@ ports:
 - port: 8009
   onOpen: ignore
 - port: 8080
+- port: 8081
+  onOpen: ignore
 - port: 8443
 tasks:
 - command: >
