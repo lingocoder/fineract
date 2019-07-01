@@ -38,4 +38,4 @@ tasks:
       mysql -e "USE mysql;\nUPDATE user SET authentication_string=PASSWORD('mysql') WHERE user='root';\nFLUSH PRIVILEGES;\n";
       ./gradlew createDB -PdbName=mifosplatform-tenants;
       ./gradlew createDB -PdbName=mifostenant-default;
-      ./gradlew integrationTest
+      ./gradlew test
