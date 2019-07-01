@@ -22,7 +22,14 @@
 
 image: gitpod/workspace-mysql
 ports:
+- port: 3306
+  onOpen: ignore
+- port: 8005
+  onOpen: ignore
+- port: 8009
+  onOpen: ignore
 - port: 8080
+- port: 8443
 tasks:
 - command: >
       # similar to .travis.yml, but using authentication_string= instead of password= due to mysql major version difference
