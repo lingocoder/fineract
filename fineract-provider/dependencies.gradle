@@ -96,6 +96,12 @@ dependencies {
                 [group: 'org.springframework', name:'spring-jms'],
                 [group: 'org.apache.activemq', name: 'activemq-broker'],
                 [group: 'javax.validation', name: 'validation-api', version: '2.0.0.Final']
+
+                // JAXB and JAF are required on Java 11 (used to be included in older Java versions)
+                [group: 'javax.xml.bind', name: 'jaxb-api', version: '2.3.1'],
+                [group: 'com.sun.xml.bind', name: 'jaxb-core', version: '2.3.0.1'],
+                [group: 'com.sun.xml.bind', name: 'jaxb-impl', version: '2.3.2'],
+                [group: 'javax.activation', name: 'activation', version: '1.1.1']
     )
 
      testCompile 'junit:junit:4.11',
